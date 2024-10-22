@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@100;400;500;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../styles/output.css">
+    <title>Digimusical</title>
+</head>
+
+<body>
+    <header class="flex w-full h-[456px] bg-home bg-cover">
+        <div class="w-full h-full">
+
+            <nav class="relative px-9 md:px-36 flex justify-between items-center">
+                <a class="text-3xl font-bold leading-none" href="#">
+                    <img src="./assets/logo.svg" alt="logo"
+                        class="w-32 h-32 rounded-full shadow-lg hover:scale-105 duration-200">
+                </a>
+                <div class="lg:hidden">
+                    <button class="navbar-burger flex items-center text-white p-3">
+                        <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Mobile menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <ul
+                    class="hidden relative top-1/2 left-96 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+                    <li>
+                        <a class="text-sm text-green-400 hover:text-gray-500" href="#">INICIO</a>
+                    </li>
+                    <li>
+                        <a class="text-sm text-gray-400 hover:text-gray-500" href="#">PRODUTOS</a>
+                    </li>
+                    <li>
+                        <a class="text-sm text-gray-400 hover:text-gray-500" href="#">SERVIÇOS</a>
+                    </li>
+                    <li>
+                        <a class="text-sm text-gray-400 hover:text-gray-500" href="#">
+                            FALE CONOSCO</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="navbar-menu relative z-50 hidden">
+                <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                <nav
+                    class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-black border-r overflow-y-auto">
+                    <div class="flex items-center mb-8">
+                        <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                            <img src="./assets/logo.svg" alt="logo"
+                                class="w-32 h-32 rounded-full shadow-lg hover:scale-105 duration-200">
+                        </a>
+                        <button class="navbar-close">
+                            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-green-400 rounded"
+                                    href="#">INICIO</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-green-400 rounded"
+                                    href="#">PRODUTOS</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-green-400 rounded"
+                                    href="#">SERVIÇOS</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-green-400 rounded"
+                                    href="#">FALE CONOSCO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="absolute text-gray-200 ml-20 md:ml-36 mt-9 md:mt-14 text-2xl font-black">Tudo fica melhor <div class="uppercase indent-6 text-4xl">com música</div></div>
+
+            <div class="mt-48 flex flex-col items-center justify-center">
+                <h2 class="text-gray-200">HORÁRIO DE FUNCIONAMENTO</h2>
+                <div class="bg-green-600 px-4 py-1 rounded-md mt-2" id="div-date-open">
+                    <span class="text-white font-medium">Seg à Dom - 18:00 às 23:00</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
