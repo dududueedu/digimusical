@@ -20,8 +20,7 @@
         <div class="fixed w-full h-full">
             <nav class="sticky top-0 px-9 md:px-36 flex justify-between items-center">
                 <a class="text-3xl font-bold leading-none" href="#">
-                    <img src="./assets/logo.svg" alt="logo"
-                        class="w-32 h-32 hover:scale-105 duration-200">
+                    <img src="./assets/logo.svg" alt="logo" class="w-32 h-32 hover:scale-105 duration-200">
                 </a>
                 <div class="lg:hidden">
                     <button class="navbar-burger flex items-center text-white p-3">
@@ -89,10 +88,10 @@
             </div>
         </div>
         <div class="w-full h-full">
-            <div class="absolute text-gray-200 ml-14 md:ml-36 mt-28 md:mt-48 text-2xl font-black">Tudo fica melhor <div
-                class="uppercase indent-6 text-4xl">com música</div>
+            <div class="absolute text-gray-200 ml-14 md:ml-36 mt-28 md:mt-48 text-2xl font-black">Tudo fica melhor 
+                <div class="uppercase indent-6 text-4xl">com música</div>
             </div>
-    
+
             <div class="mt-80 flex flex-col items-center justify-center">
                 <h2 class="text-gray-200">HORÁRIO DE FUNCIONAMENTO</h2>
                 <div class="bg-green-600 px-4 py-1 rounded-md mt-2" id="div-date-open">
@@ -102,7 +101,7 @@
         </div>
     </header>
 
-    <section class="bg-gradient-to-b from-zinc-900  to-orange-500 h-screen">
+    <section class="bg-gradient-to-b from-zinc-900  to-orange-500 max-w-screen-2xl mx-auto h-screen">
 
         <div class="flex justify-center">
             <div class="flex flex-col p-14 items-start">
@@ -113,12 +112,12 @@
             </div>
         </div>
 
-        <div class="flex flex-col items-center">
-            <div class="flex absolute lg:left-12 xl:left-28 2xl:left-60">
-                <img class="w-52 h-44 md:w-96 md:h-80 mt-8 rounded-md" src="./assets/section1.jpg" alt="event1">
+        <div class="flex flex-row justify-center">
+            <div class="flex relative mx-3">
+                <img class="w-52 h-44 md:w-96 md:h-80 mt-8 rounded-lg" src="./assets/section1.jpg" alt="event1">
             </div>
 
-            <div class="flex flex-col absolute mt-60 xl:mt-7 2xl:mt-7 lg:right-12 xl:right-28 2xl:right-60 gap-3">
+            <div class="flex flex-col relative xl:mt-7 2xl:mt-7 gap-3 mx-3">
                 <span class="uppercase text-zinc-50 text-4xl font-medium mb-4">
                     Conte com nossa consultoria <h3>especializada em EVENTOS</h3>
                 </span>
@@ -144,6 +143,43 @@
             </div>
         </div>
     </section>
+
+    <footer class="bg-zinc-900">
+        <div class="max-w-screen-lg px-4 sm:px-6 text-gray-800 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto">
+            <div class="relative">
+                <a class="text-3xl font-bold leading-none" href="#">
+                    <img src="./assets/logo.svg" alt="logo" class="w-32 h-32 hover:scale-105 duration-200">
+                </a>
+            </div>
+            <div class="pt-10 pl-10 pr-10">
+                <div class="text-sm uppercase text-zinc-50 font-bold">Localização</div>
+                <a class="my-3 block text-gray-400" href="#">Av. Antônio Tabosa, 77B
+                    Paraipaba, CE, 62685-000 <span class="text-slate-50 text-xs p-1"></span></a>
+            </div>
+            <div class="pt-10 pl-10 pr-10">
+                <div class="text-sm uppercase text-zinc-50 font-bold">Redes socias</div>
+                <ul class="flex flex-col gap-2">
+                    <li class="mt-3"><a class="relative text-gray-400" href="#">Facebook</a></li>
+                    <li><a class="relative text-gray-400" href="#">Instagram</a></li>
+                    <li><a class="relative text-gray-400" href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="pt-10">
+                <div class="text-sm uppercase text-zinc-200 font-bold">Fale Conosco</div>
+                <a class="my-2 block text-gray-400" href="/#">Daniel: (85) 99607-5780</a>
+                <a class="my-2 block text-gray-400" href="/#">Deyvid: (85) 99679-1092</a>
+                <a class="my-2 pb-2 block text-gray-400" href="/#">Eduardo: (85) 99444-0170</a>
+            </div>
+        </div>
+        <div class="bg-zinc-900">
+            <div class="flex pb-5 px-3 m-auto border-t text-gray-800 text-sm flex-col
+              max-w-screen-lg items-center">
+                <div class="my-5 text-zinc-200">© Copyright 2024. Todos os direitos reservados.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Credit: Componentity.com -->
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./script.js"></script>
