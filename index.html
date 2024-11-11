@@ -18,7 +18,7 @@
 <body>
     <header class="flex w-full h-[480px] bg-home bg-cover">
         <div class="fixed w-full h-full">
-            <nav class="sticky top-0 px-9 md:px-36 flex justify-between items-center">
+            <nav class="sticky overflow-hidden bg-transparent top-0 px-9 md:px-36 flex justify-between items-center">
                 <a class="text-3xl font-bold leading-none" href="#">
                     <img src="./assets/logo.svg" alt="logo" class="w-32 h-32 hover:scale-105 duration-200">
                 </a>
@@ -35,7 +35,7 @@
                         <a class="text-sm text-green-400 hover:text-gray-500" href="#">INICIO</a>
                     </li>
                     <li>
-                        <a class="text-sm text-gray-400 hover:text-gray-500" href="#">PRODUTOS</a>
+                        <a class="text-sm text-gray-400 hover:text-gray-500" href="#produtos">PRODUTOS</a>
                     </li>
                     <li>
                         <a class="text-sm text-gray-400 hover:text-gray-500" href="#">SERVIÇOS</a>
@@ -144,7 +144,39 @@
         </div>
     </section>
 
-    <footer class="bg-zinc-900">
+    <section id="produtos" class="bg-zinc-900 max-w-screen-2xl mx-auto h-screen flex flex-col items-center py-36">
+        <p class="text-zinc-200">Trabalhamos com uma gama completa de acessórios musicais e instrumentos</p>
+        <h2 class="text-zinc-200 text-5xl">Conheça nosso mix de produtos.</h2>
+
+        <div class="grid grid-cols-4 gap-16 py-10">
+            <div class="flex justify-center items-center">
+                <img src="./assets/plugs.jpg" alt="plugs" class="h-48 w-48">
+                <a href="https://api.whatsapp.com/send?phone=5585994440170&text=Ol%C3%A1!%20Vim%20pelo%20site.%20" target="_blank" class="text-black absolute p-2 bg-green-400 hover:bg-opacity-70">
+                    <p class="">Plugs e Conectores</p>
+                </a>
+            </div>
+            <div class="flex justify-center items-center">
+                <img src="./assets/cabo.jpg" alt="plugs" class="h-48 w-48">
+                <a href="https://api.whatsapp.com/send?phone=5585994440170&text=Ol%C3%A1!%20Vim%20pelo%20site.%20" target="_blank" class="text-black absolute p-2 bg-green-400 hover:bg-opacity-70">
+                    <p class="">Cabos diversos</p>
+                </a>
+            </div>
+            <div class="flex justify-center items-center">
+                <img src="./assets/nig.png" alt="plugs" class="h-48 w-48">
+                <a href="https://api.whatsapp.com/send?phone=5585994440170&text=Ol%C3%A1!%20Vim%20pelo%20site.%20" target="_blank" class="text-black absolute p-2 bg-green-400 hover:bg-opacity-70">
+                    <p class="">Encordoamentos</p>
+                </a>
+            </div>
+            <div class="flex justify-center items-center">
+                <img src="./assets/guitar.jpg" alt="plugs" class="h-48 w-48">
+                <a href="https://api.whatsapp.com/send?phone=5585994440170&text=Ol%C3%A1!%20Vim%20pelo%20site.+Gostaria+de+saber+mais+um+pouco+sobre+os+instrumentos." target="_blank" class="text-black absolute p-2 bg-green-400 hover:bg-opacity-70">
+                    <p class="">Instrumentos</p>
+                </a>
+            </div>
+          </div>
+    </section>
+
+    <footer class="bg-orange-500">
         <div class="max-w-screen-lg px-4 sm:px-6 text-gray-800 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto">
             <div class="relative">
                 <a class="text-3xl font-bold leading-none" href="#">
@@ -152,29 +184,29 @@
                 </a>
             </div>
             <div class="pt-10 pl-10 pr-10">
-                <div class="text-sm uppercase text-zinc-50 font-bold">Localização</div>
-                <a class="my-3 block text-gray-400" href="#">Av. Antônio Tabosa, 77B
+                <div class="text-lg uppercase text-zinc-50 font-bold">Localização</div>
+                <a class="my-3 block text-zinc-200" href="#">Av. Antônio Tabosa, 77B
                     Paraipaba, CE, 62685-000 <span class="text-slate-50 text-xs p-1"></span></a>
             </div>
             <div class="pt-10 pl-10 pr-10">
-                <div class="text-sm uppercase text-zinc-50 font-bold">Redes socias</div>
+                <div class="text-lg uppercase text-zinc-50 font-bold">Redes socias</div>
                 <ul class="flex flex-col gap-2">
-                    <li class="mt-3"><a class="relative text-gray-400" href="#">Facebook</a></li>
-                    <li><a class="relative text-gray-400" href="#">Instagram</a></li>
-                    <li><a class="relative text-gray-400" href="#">LinkedIn</a></li>
+                    <li class="mt-3"><a class="relative text-zinc-200" href="#">Facebook</a></li>
+                    <li><a class="relative text-zinc-200" href="#">Instagram</a></li>
+                    <li><a class="relative text-zinc-200" href="#">LinkedIn</a></li>
                 </ul>
             </div>
             <div class="pt-10">
-                <div class="text-sm uppercase text-zinc-200 font-bold">Fale Conosco</div>
-                <a class="my-2 block text-gray-400" href="/#">Daniel: (85) 99607-5780</a>
-                <a class="my-2 block text-gray-400" href="/#">Deyvid: (85) 99679-1092</a>
-                <a class="my-2 pb-2 block text-gray-400" href="/#">Eduardo: (85) 99444-0170</a>
+                <div class="text-lg uppercase text-zinc-200 font-black">Fale Conosco</div>
+                <a class="my-2 block text-zinc-200" href="/#">Daniel: (85) 99607-5780</a>
+                <a class="my-2 block text-zinc-200" href="/#">Deyvid: (85) 99679-1092</a>
+                <a class="my-2 pb-2 block text-zinc-200" href="/#">Eduardo: (85) 99444-0170</a>
             </div>
         </div>
-        <div class="bg-zinc-900">
+        <div class="bg-orange-500">
             <div class="flex pb-5 px-3 m-auto border-t text-gray-800 text-sm flex-col
               max-w-screen-lg items-center">
-                <div class="my-5 text-zinc-200">© Copyright 2024. Todos os direitos reservados.</div>
+                <div class="my-5 text-zinc-200">© Copyright 2024 - DIGIMUSICAL - Todos os direitos reservados.</div>
             </div>
         </div>
     </footer>
