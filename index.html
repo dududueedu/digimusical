@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" type="image/x-icon" href="/assets/icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,11 +17,11 @@
 </head>
 
 <body>
-    <header class="flex w-full h-[480px] bg-home bg-cover">
-        <div class="fixed w-full h-full">
-            <nav class="sticky overflow-hidden bg-transparent top-0 px-9 md:px-36 flex justify-between items-center">
-                <a class="text-3xl font-bold leading-none" href="#">
-                    <img src="./assets/logo.svg" alt="logo" class="w-32 h-32 hover:scale-105 duration-200">
+    <header class="flex w-full h-[480px] bg-home bg-cover z-40">
+        <div class="fixed w-full z-50">
+            <nav class="sticky overflow-hidden top-0 py-9 md:py-6 lg:py-7 px-9 md:px-36 flex justify-between items-center z-50" id="nav-header">
+                <a class="text-3xl leading-none" href="#">
+                    <img src="./assets/logo.svg" alt="logo" class="w-32 hover:scale-105 duration-200">
                 </a>
                 <div class="lg:hidden">
                     <button class="navbar-burger flex items-center text-white p-3">
@@ -49,7 +50,7 @@
             <div class="navbar-menu relative z-50 hidden">
                 <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
                 <nav
-                    class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-black border-r overflow-y-auto">
+                    class="fixed top-0 left-0 h-screen flex flex-col w-5/6 max-w-sm py-6 px-6 bg-black border-r overflow-y-auto">
                     <div class="flex items-center mb-8">
                         <a class="mr-auto text-3xl font-bold leading-none" href="#">
                             <img src="./assets/logo.svg" alt="logo"
@@ -67,20 +68,20 @@
                     <div>
                         <ul>
                             <li class="mb-1">
-                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-green-400 rounded"
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-green-400 rounded op-close"
                                     href="#">INICIO</a>
                             </li>
                             <li class="mb-1">
-                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-green-400 rounded"
-                                    href="#">PRODUTOS</a>
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-green-400 rounded op-close"
+                                    href="#produtos">PRODUTOS</a>
                             </li>
                             <li class="mb-1">
-                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-green-400 rounded"
-                                    href="#">SERVIÇOS</a>
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-green-400 rounded op-close"
+                                    href="#servicos">SERVIÇOS</a>
                             </li>
                             <li class="mb-1">
-                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-green-400 rounded"
-                                    href="#">FALE CONOSCO</a>
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-green-400 rounded op-close"
+                                    href="#info">FALE CONOSCO</a>
                             </li>
                         </ul>
                     </div>
@@ -88,20 +89,20 @@
             </div>
         </div>
         <div class="w-full h-full">
-            <div class="absolute text-gray-200 ml-14 md:ml-36 mt-28 md:mt-48 text-2xl font-black">Tudo fica melhor 
+            <div class="text-gray-200 ml-14 md:ml-36 mt-44 md:mt-48 lg:mt-48 text-2xl font-black">Tudo fica melhor 
                 <div class="uppercase indent-6 text-4xl">com música</div>
             </div>
 
-            <div class="mt-80 flex flex-col items-center justify-center">
+            <div class="mt-36 md:mt-32 lg:mt-28 flex flex-col items-center justify-center">
                 <h2 class="text-gray-200">HORÁRIO DE FUNCIONAMENTO</h2>
                 <div class="bg-green-600 px-4 py-1 rounded-md mt-2" id="div-date-open">
-                    <span class="text-white font-medium">Seg à Dom - 18:00 às 23:00</span>
+                    <span class="text-white font-medium">Seg à Sab - 08:00 às 18:00</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="bg-gradient-to-b from-zinc-900 to-orange-500 mx-auto pb-20">
+    <section class="bg-gradient-to-b from-zinc-900 to-orange-500 mx-auto pb-20 z-40">
 
         <div class="flex justify-center">
             <div class="flex flex-col p-14 items-start">
@@ -117,7 +118,7 @@
                 <img class="w-80 h-72 md:w-80 md:h-72 lg:w-96 lg:h-80 mt-2 md:mt-6 lg:mt-8 rounded-lg" src="./assets/section1.jpg" alt="event1">
             </div>
 
-            <div class="flex flex-col relative mt-7 md:mt-5 lg:mt-7 gap-3 mx-3 px-7 md:px-0 lg:px-0 md:w-2/5 lg:w-2/5">
+            <div class="flex flex-col mt-7 md:mt-5 lg:mt-7 gap-3 mx-3 px-7 md:px-0 lg:px-0 md:w-2/5 lg:w-2/5">
                 <span class="block uppercase break-words text-zinc-50 text-2xl lg:text-3xl font-semibold mb-4">
                     Conte com nossa consultoria <h3>especializada em EVENTOS</h3>
                 </span>
@@ -144,7 +145,7 @@
         </div>
     </section>
 
-    <section id="produtos" class="bg-zinc-900 mx-auto flex flex-col items-center pt-16 md:pt-28 lg:pt-36">
+    <section id="produtos" class="bg-zinc-900 mx-auto flex flex-col items-center pt-24 md:pt-36 lg:pt-40 z-40">
         
         <div class="flex flex-col items-center justify-center px-7 md:px-0 lg:px-0 text-justify">
             <small class="text-zinc-200 pb-3 md:pb-8 lg:pb-11 lg:text-xl">Trabalhamos com uma gama completa de acessórios musicais e instrumentos</small>

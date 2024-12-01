@@ -37,6 +37,42 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     }
-});
 
-console.log("teste")
+    const opClose = document.querySelectorAll('.op-close');
+    if (opClose.length) {
+        for (var i = 0; i < opClose.length; i++) {
+            opClose[i].addEventListener('click', function() {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+
+    function checkOpen(){
+        const data = new Date();
+        return data.getHours() >= 8 && data.getHours() < 18;
+    }
+
+    const divDateOpen = document.getElementById("div-date-open");
+
+    if(checkOpen()) {
+        divDateOpen.classList.remove("bg-red-600");
+        divDateOpen.classList.add("bg-green-600");
+    }else{
+        divDateOpen.classList.remove("bg-green-600");
+        divDateOpen.classList.add("bg-red-600");
+    }
+
+    // tests
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+            document.getElementById("nav-header").style.background = "#18181b";
+        }else{
+            document.getElementById("nav-header").style.background = "transparent";
+        }
+    }
+});
