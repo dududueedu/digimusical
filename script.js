@@ -54,9 +54,14 @@ document.addEventListener('DOMContentLoaded', function() {
         return data.getHours() >= 8 && data.getHours() < 18;
     }
 
+    function daySunday(){ //checking sunday
+        const data = new Date();
+        return data.getDay() == 0;
+    }
+
     const divDateOpen = document.getElementById("div-date-open");
 
-    if(checkOpen()) {
+    if(checkOpen() && !daySunday()) {
         divDateOpen.classList.remove("bg-red-600");
         divDateOpen.classList.add("bg-green-600");
     }else{
