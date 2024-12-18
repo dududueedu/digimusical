@@ -1873,10 +1873,6 @@ video {
   border-radius: 0.375rem;
 }
 
-.rounded-2xl {
-  border-radius: 1rem;
-}
-
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1905,16 +1901,6 @@ video {
 .rounded-t {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-}
-
-.rounded-s-none {
-  border-start-start-radius: 0px;
-  border-end-start-radius: 0px;
-}
-
-.rounded-s-full {
-  border-start-start-radius: 9999px;
-  border-end-start-radius: 9999px;
 }
 
 .rounded-bl {
@@ -2051,20 +2037,12 @@ video {
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 
-.bg-opacity-30 {
-  --tw-bg-opacity: 0.3;
+.bg-opacity-90 {
+  --tw-bg-opacity: 0.9;
 }
 
 .bg-opacity-95 {
   --tw-bg-opacity: 0.95;
-}
-
-.bg-opacity-85 {
-  --tw-bg-opacity: 0.85;
-}
-
-.bg-opacity-90 {
-  --tw-bg-opacity: 0.9;
 }
 
 .bg-gradient-to-b {
@@ -2215,10 +2193,6 @@ video {
   padding: 3.5rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .p-3 {
   padding: 0.75rem;
 }
@@ -2229,10 +2203,6 @@ video {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .px-1 {
@@ -3005,14 +2975,6 @@ body {
   --tw-bg-opacity: 0.7;
 }
 
-.hover\:bg-opacity-60:hover {
-  --tw-bg-opacity: 0.6;
-}
-
-.hover\:bg-opacity-40:hover {
-  --tw-bg-opacity: 0.4;
-}
-
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -3137,10 +3099,6 @@ body {
     gap: 2.5rem;
   }
 
-  .md\:rounded-none {
-    border-radius: 0px;
-  }
-
   .md\:p-1 {
     padding: 0.25rem;
   }
@@ -3261,16 +3219,12 @@ body {
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .lg\:rounded-none {
-    border-radius: 0px;
+  .lg\:p-2 {
+    padding: 0.5rem;
   }
 
   .lg\:p-3 {
     padding: 0.75rem;
-  }
-
-  .lg\:p-2 {
-    padding: 0.5rem;
   }
 
   .lg\:px-0 {
