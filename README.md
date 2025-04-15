@@ -15,19 +15,19 @@
   <p> HOME </p>
   <span> This session presents a menu with the logo, an attractive phrase and the store's opening hours. </span>
   </br>
-  <img width="100%" src="https://imgur.com/LKQiANB.png"></br></br></br>
+  <img width="100%" src="https://imgur.com/svafaCN.png"></br></br></br>
 
   <p> Products </p>
   <span> This session presents the products that the store sells. </span>
-  <img width="100%" src="https://imgur.com/Dnzrb6j.png"></br></br></br>
+  <img width="100%" src="https://imgur.com/DTbfe0X.png"></br></br></br>
 
   <p> Services </p>
     <span> This session presents the services that the store offers. </span>
-  <img width="100%" src="https://imgur.com/1k2JVXx.png"></br></br></br>
+  <img width="100%" src="https://imgur.com/jFAAuea.png"></br></br></br>
 
   <p> Contact us </p>
   <span> This last session presents the means of communication for contacting the company. </span>
-  <img width="100%" src="https://imgur.com/75vf8XD.png"></br></br></br>
+  <img width="100%" src="https://imgur.com/C7f1bUK.png"></br></br></br>
 </div>
 
 
