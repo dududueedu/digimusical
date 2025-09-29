@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="/assets/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@100;400;500;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../../styles/output.css">
+    <title>Microfones</title>
+</head>
+
+<body>
+    <header class="flex w-full h-[420px] lg:h-[480px] bg-home bg-cover z-40">
+        <div class="fixed w-full z-50">
+            <nav class="sticky overflow-hidden top-0 py-9 md:py-6 lg:py-7 px-9 md:px-36 flex justify-between items-center z-50"
+                id="nav-adapter">
+                <a class="text-3xl leading-none" href="/index.html">
+                    <img src="../../assets/logo.svg" alt="logo" class="w-32 hover:scale-105 duration-200">
+                </a>
+                <div class="lg:hidden">
+                    <button class="navbar-burger flex items-center text-white p-3">
+                        <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <title>Mobile menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="hidden relative ml-96 lg:flex lg:w-auto lg:space-x-4">
+                    <li>
+                        <a class="text-sm text-green-400 hover:text-gray-500" href="#">INICIO</a>
+                    </li>
+                    <li>
+                        <a class="text-sm text-gray-400 hover:text-gray-500" href="#produtos">PRODUTOS</a>
+                    </li>
+                    <li>
+                        <a class="text-sm text-gray-400 hover:text-gray-500" href="#info">
+                            FALE CONOSCO</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="navbar-menu relative z-50 hidden">
+                <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+                <nav
+                    class="fixed top-0 left-0 h-screen flex flex-col w-5/6 max-w-sm py-6 px-6 bg-black border-r overflow-y-auto">
+                    <div class="flex items-center mb-8">
+                        <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                            <img src="../../assets/logo.svg" alt="logo"
+                                class="w-32 h-32 rounded-full shadow-lg hover:scale-105 duration-200">
+                        </a>
+                        <button class="navbar-close">
+                            <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-green-400 rounded op-close"
+                                    href="#">INICIO</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-green-400 rounded op-close"
+                                    href="#produtos">PRODUTOS</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-green-400 rounded op-close"
+                                    href="#info">FALE CONOSCO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="w-full h-full">
+            <div class="mt-60 md:mt-32 lg:mt-60 flex flex-col items-center justify-center">
+                <h2 class="text-gray-200 font-bold text-1xl lg:text-4xl p-2 mt-4 bg-orange-500">Conheça nossa variedade
+                    em Microfones.</h2>
+            </div>
+        </div>
+    </header>
+
+    <section id="produtos" class="bg-zinc-900 mx-auto flex flex-col items-center pt-10 md:pt-36 lg:pt-0 z-40">
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 mt-24 mb-16">
+
+            <div class="flex items-center flex-col bg-orange-500 w-80 lg:w-64 mb-8">
+                <div class="bg-white">
+                    <img src="../assets/mics/m58.png" alt="Microfone_M58"
+                        class="w-80 md:h-56 md:w-56 lg:h-64 lg:w-64 p-8">
+                </div>
+                <div class="p-0">
+                    <div class="p-6">
+                        <div class="font-bold text-xl mb-2">Com FIO</div>
+                        <p class="text-gray-700 text-base text-justify">
+                            Dinâmico e projetado para amortecer os choques e ruídos.
+                        </p>
+                    </div>
+                </div>
+                <button class="bg-green-500 hover:bg-opacity-70 py-4 px-4 rounded-md text-gray-700 mb-8">
+                    <a href="https://api.whatsapp.com/send?phone=5585994440170&text=Olá,+gostaria+de+conferir+as+ofertas+dos+microfones+com+fio."
+                        target="_blank">
+                        <p class="">Comprar</p>
+                    </a>
+                </button>
+            </div>
+            <div class="flex items-center flex-col bg-orange-500 w-80 lg:w-64 mb-8">
+                <div class="bg-white">
+                    <img src="../assets/mics/skp.png" alt="Microfone_skp"
+                        class="w-80 md:h-56 md:w-56 lg:h-64 lg:w-64 py-6 px-6">
+                </div>
+                <div class="p-0">
+                    <div class="p-6">
+                        <div class="font-bold text-xl mb-2">Sem FIO</div>
+                        <p class="text-gray-700 text-base text-justify">
+                            2 microfones, 1 Receptor de transmissão, robusto e resistente.
+                        </p>
+                    </div>
+                </div>
+                <button class="bg-green-500 hover:bg-opacity-70 py-4 px-4 rounded-md text-gray-700 mb-8">
+                    <a href="https://api.whatsapp.com/send?phone=5585994440170&text=Olá,+gostaria+de+conferir+as+ofertas+dos+microfones+sem+fio."
+                        target="_blank">
+                        <p class="">Comprar</p>
+                    </a>
+                </button>
+            </div>
+            <div class="flex items-center flex-col bg-orange-500 w-80 lg:w-64 mb-8">
+                <div class="bg-white">
+                    <img src="../assets/mics/mic-cds.jpg" alt="Microfone_condensador"
+                        class="w-80 md:h-56 md:w-56 lg:h-64 lg:w-64 py-2 px-3">
+                </div>
+                <div class="p-0">
+                    <div class="p-6">
+                        <div class="font-bold text-xl mb-2">Condensador</div>
+                        <p class="text-gray-700 text-base text-justify">
+                            Perfeito para gravações que requer qualidade de nível profissional!
+                        </p>
+                    </div>
+                </div>
+                <button class="bg-green-500 hover:bg-opacity-70 py-4 px-4 rounded-md text-gray-700 mb-8">
+                    <a href="https://api.whatsapp.com/send?phone=5585994440170&text=Olá,+gostaria+de+conferir+as+ofertas+das+cordas+de+Nylon."
+                        target="_blank">
+                        <p class="">Comprar</p>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credit: Componentity.com -->
+    <footer id="info" class="bg-orange-500">
+        <div class="max-w-screen-lg px-4 sm:px-6 text-gray-800 sm:grid md:grid-cols-4 sm:grid-cols-2 mx-auto gap-10">
+            <div class="hidden md:flex lg:flex md:relative lg:relative ml-6 md:ml-0 lg:ml-0">
+                <a class="text-3xl font-bold leading-none" href="#">
+                    <img src="../../assets/logo.svg" alt="logo" class="w-32 h-32 hover:scale-105 duration-200">
+                </a>
+            </div>
+            <div class="pt-10 ml-6 md:ml-0 lg:ml-0">
+                <div class="text-lg uppercase text-zinc-50 font-bold">Localização</div>
+                <a class="my-3 block text-zinc-200" target="_blank" href="https://maps.app.goo.gl/QgmoZEhf8Y3SqU1s6">Av.
+                    Antônio Tabosa, 77B
+                    Paraipaba, CE, 62685-000 <span class="text-slate-50 text-xs p-1"></span></a>
+            </div>
+            <div class="pt-10 ml-6 md:ml-0 lg:ml-10">
+                <div class="text-lg uppercase text-zinc-50 font-bold">Redes socias</div>
+                <ul class="flex flex-col gap-2">
+                    <li class="mt-3"><a class="relative text-zinc-200" target="_blank"
+                            href="https://www.facebook.com/asualojademusica/">Facebook</a></li>
+                    <li><a class="relative text-zinc-200" target="_blank"
+                            href="https://www.instagram.com/digi.musical/">Instagram</a></li>
+                    <li><a class="relative text-zinc-200" target="_blank"
+                            href="https://www.linkedin.com/in/digimusical/">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="pt-10 ml-6 md:ml-0 lg:ml-0">
+                <div class="text-lg uppercase text-zinc-200 font-black">Fale Conosco</div>
+                <a class="my-2 block text-zinc-200" target="_blank"
+                    href="https://api.whatsapp.com/send?phone=5585996075780&text=Ol%C3%A1, +Daniel!%20Vim%20pelo%20site.%20">Daniel:
+                    (85) 99607-5780</a>
+                <a class="my-2 block text-zinc-200" target="_blank"
+                    href="https://api.whatsapp.com/send?phone=5585996791092&text=Ol%C3%A1, +Deyvid!%20Vim%20pelo%20site.%20">Deyvid:
+                    (85) 99679-1092</a>
+                <a class="my-2 pb-2 block text-zinc-200" target="_blank"
+                    href="https://api.whatsapp.com/send?phone=5585994440170&text=Ol%C3%A1, +Eduardo!%20Vim%20pelo%20site.%20">Eduardo:
+                    (85) 99444-0170</a>
+            </div>
+        </div>
+        <div class="bg-orange-500">
+            <div class="flex pb-5 px-3 m-auto border-t text-gray-800 text-sm flex-col
+              max-w-screen-lg items-center">
+                <div class="my-5 text-zinc-200 text-justify">© Copyright 2024 - DIGIMUSICAL - Todos os direitos
+                    reservados.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./belts.js"></script>
+</body>
+
+</html>
